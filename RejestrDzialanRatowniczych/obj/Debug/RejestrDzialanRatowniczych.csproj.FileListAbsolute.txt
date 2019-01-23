@@ -1,0 +1,12 @@
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\bin\Debug\RejestrDzialanRatowniczych.exe.config
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\bin\Debug\RejestrDzialanRatowniczych.exe
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\bin\Debug\RejestrDzialanRatowniczych.pdb
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.Properties.Resources.resources
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.csproj.GenerateResource.cache
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.csproj.CoreCompileInputs.cache
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.exe
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.pdb
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.csprojAssemblyReference.cache
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.Osoba.resources
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.Wypadek.resources
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.WypadekView.resources

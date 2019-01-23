@@ -1,0 +1,10 @@
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\bin\Release\RejestrDzialanRatowniczych.exe.config
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\bin\Release\RejestrDzialanRatowniczych.exe
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\bin\Release\RejestrDzialanRatowniczych.pdb
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.Osoba.resources
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.Properties.Resources.resources
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.Wypadek.resources
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.csproj.GenerateResource.cache
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.csproj.CoreCompileInputs.cache
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.exe
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.pdb
