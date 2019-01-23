@@ -15,16 +15,15 @@ namespace RejestrDzialanRatowniczych
     {
         public WypadekView(string parameter)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=MSIGP70;Initial Catalog=werszyn0.0.1;Integrated Security=True");
             InitializeComponent();
 
-            con.Open();
+            main.con.Open();
             String query = "SELECT * FROM WYPADEK WHERE ID_Zgloszenia="+"'"+parameter+"'";
-            SqlDataAdapter SDA = new SqlDataAdapter(query, con);
+            SqlDataAdapter SDA = new SqlDataAdapter(query, main.con);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
             dataGridView1.DataSource = dt;
-            con.Close();
+            main.con.Close();
         }
     }
 }

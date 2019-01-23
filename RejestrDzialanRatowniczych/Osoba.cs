@@ -12,7 +12,6 @@ namespace RejestrDzialanRatowniczych
 {
     public partial class Osoba : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=MSIGP70;Initial Catalog=werszyn0.0.1;Integrated Security=True");
         bool button_szczegoly = true;
         public Osoba()
         {
@@ -23,8 +22,8 @@ namespace RejestrDzialanRatowniczych
         
         private void button1_Click(object sender, EventArgs e) // Procedura dodawania nowej osoby Osoba_insert
         {
-            con.Open();
-            SqlCommand scCommand = new SqlCommand("Osoba_insert", con);
+            main.con.Open();
+            SqlCommand scCommand = new SqlCommand("Osoba_insert", main.con);
             scCommand.CommandType = CommandType.StoredProcedure;
             scCommand.Parameters.Add("@Imie", SqlDbType.VarChar, 25).Value = textBox1.Text;
             scCommand.Parameters.Add("@Nazwisko", SqlDbType.VarChar, 50).Value = textBox2.Text;
@@ -40,16 +39,16 @@ namespace RejestrDzialanRatowniczych
             {
                 MessageBox.Show(ex.ToString());
             }
-            con.Close();
+            main.con.Close();
         }
 
         private void button2_Click(object sender, EventArgs e) // Procedura edytowania osoby Osoba_update
         {
-           con.Open();
+            main.con.Open();
             String origin = ExecuteQuery(textBox5);
             String check;
 
-           SqlCommand scCommand = new SqlCommand("Osoba_update", con);
+           SqlCommand scCommand = new SqlCommand("Osoba_update", main.con);
            scCommand.CommandType = CommandType.StoredProcedure;
            scCommand.Parameters.Add("@Imie", SqlDbType.VarChar, 25).Value = textBox1.Text;
            scCommand.Parameters.Add("@Nazwisko", SqlDbType.VarChar, 50).Value = textBox2.Text;
@@ -62,13 +61,13 @@ namespace RejestrDzialanRatowniczych
             {
                 scCommand.ExecuteNonQuery();
                 MessageBox.Show("Update Succesfull");
-                con.Close();
+                main.con.Close();
                 button4_Click(sender, e);
             }
            else
             {
                 MessageBox.Show("Wartosc jest aktualnie zmieniana, sprobuj ponownie!");
-                con.Close();
+                main.con.Close();
                 button4_Click(sender, e);
             }
         }
@@ -76,8 +75,8 @@ namespace RejestrDzialanRatowniczych
         private void button3_Click(object sender, EventArgs e) // Procedura usuwania osoby Osoba_delete
         {
 
-            con.Open();
-            SqlCommand scCommand = new SqlCommand("Osoba_delete", con);
+            main.con.Open();
+            SqlCommand scCommand = new SqlCommand("Osoba_delete", main.con);
             scCommand.CommandType = CommandType.StoredProcedure;
             scCommand.Parameters.Add("@ID_Osoba", SqlDbType.Int).Value = textBox5.Text;
             try
@@ -89,13 +88,13 @@ namespace RejestrDzialanRatowniczych
             {
                 MessageBox.Show("Brak rekordu dla osoby o podanym ID!");
             }
-            con.Close();
+            main.con.Close();
         }
         private void button4_Click(object sender, EventArgs e) // Wyswietlanie zawartosci tabela Osoba
         {
-            con.Open();
+            main.con.Open();
             String query = "SELECT * FROM OSOBA";
-            SqlDataAdapter SDA = new SqlDataAdapter(query,con);
+            SqlDataAdapter SDA = new SqlDataAdapter(query, main.con);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -110,7 +109,7 @@ namespace RejestrDzialanRatowniczych
                 dataGridView1.Columns.Add(button);
                 button_szczegoly = false;
             }
-            con.Close();
+            main.con.Close();
         }
 
         private void dataGridView1_CellBlick(object sender, DataGridViewCellEventArgs e)
@@ -141,7 +140,7 @@ namespace RejestrDzialanRatowniczych
 
         private String ExecuteQuery(TextBox textBox)
         {
-            SqlCommand command = new SqlCommand("SELECT RowVersion from Osoba where ID_Osoba = @ID_Osoba", con);
+            SqlCommand command = new SqlCommand("SELECT RowVersion from Osoba where ID_Osoba = @ID_Osoba", main.con);
             command.Parameters.AddWithValue("@ID_Osoba", int.Parse(textBox.Text));
             String result = null;
             using (SqlDataReader reader = command.ExecuteReader())

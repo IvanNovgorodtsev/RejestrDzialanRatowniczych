@@ -37,11 +37,11 @@ namespace RejestrDzialanRatowniczych
         }
 
 
-        SqlConnection con = new SqlConnection(@"Data Source=MSIGP70;Initial Catalog=werszyn0.0.1;Integrated Security=True");
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand scCommand = new SqlCommand("Wypadek_insert", con);
+            main.con.Open();
+            SqlCommand scCommand = new SqlCommand("Wypadek_insert", main.con);
             scCommand.CommandType = CommandType.StoredProcedure;
             scCommand.Parameters.Add("@Miejsce", SqlDbType.VarChar, 50).Value = textBox1.Text;
             scCommand.Parameters.Add("@Godzina", SqlDbType.Time).Value = textBox2.Text;
@@ -60,13 +60,13 @@ namespace RejestrDzialanRatowniczych
             {
                 MessageBox.Show(ex.ToString());
             }
-            con.Close();
+            main.con.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand scCommand = new SqlCommand("Wypadek_update", con);
+            main.con.Open();
+            SqlCommand scCommand = new SqlCommand("Wypadek_update", main.con);
             scCommand.CommandType = CommandType.StoredProcedure;
             scCommand.Parameters.Add("@Miejsce", SqlDbType.VarChar, 50).Value = textBox1.Text;
             if (String.IsNullOrEmpty(textBox2.Text)) scCommand.Parameters.Add("@Godzina", SqlDbType.Time).Value = Convert.DBNull;
@@ -84,13 +84,13 @@ namespace RejestrDzialanRatowniczych
             {
                 MessageBox.Show(ex.ToString());
             }
-            con.Close();
+            main.con.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand scCommand = new SqlCommand("Wypadek_delete", con);
+            main.con.Open();
+            SqlCommand scCommand = new SqlCommand("Wypadek_delete", main.con);
             scCommand.CommandType = CommandType.StoredProcedure;
             scCommand.Parameters.Add("@ID_Zgloszenia", SqlDbType.Int).Value = textBox5.Text;
             try
@@ -102,18 +102,18 @@ namespace RejestrDzialanRatowniczych
             {
                 MessageBox.Show("Brak rekordu dla wypadku o podanym ID!");
             }
-            con.Close();
+            main.con.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            con.Open();
+            main.con.Open();
             String query = "SELECT * FROM WYPADEK";
-            SqlDataAdapter SDA = new SqlDataAdapter(query, con);
+            SqlDataAdapter SDA = new SqlDataAdapter(query, main.con);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
             dataGridView1.DataSource = dt;
-            con.Close();
+            main.con.Close();
         }
     }
 }
