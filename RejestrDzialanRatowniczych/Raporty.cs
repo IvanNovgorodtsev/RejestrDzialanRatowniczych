@@ -57,7 +57,6 @@ namespace RejestrDzialanRatowniczych
             DataTable dt = new DataTable();
             SDA.Fill(dt);
             dataGridView1.DataSource = dt;
-            dataGridView1.Columns["RowVersion"].Visible = false;
             main.con.Close();
         }
 

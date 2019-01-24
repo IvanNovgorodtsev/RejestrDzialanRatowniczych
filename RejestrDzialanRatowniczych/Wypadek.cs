@@ -58,7 +58,7 @@ namespace RejestrDzialanRatowniczych
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.Message);
             }
             main.con.Close();
         }
