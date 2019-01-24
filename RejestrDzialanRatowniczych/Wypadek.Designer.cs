@@ -31,7 +31,16 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.osobaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wypadekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.raportyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -48,14 +57,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -66,7 +67,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.osobaToolStripMenuItem,
-            this.wypadekToolStripMenuItem});
+            this.wypadekToolStripMenuItem,
+            this.raportyToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(809, 24);
@@ -86,6 +88,13 @@
             this.wypadekToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.wypadekToolStripMenuItem.Text = "Wypadek";
             this.wypadekToolStripMenuItem.Click += new System.EventHandler(this.wypadekToolStripMenuItem_Click);
+            // 
+            // raportyToolStripMenuItem
+            // 
+            this.raportyToolStripMenuItem.Name = "raportyToolStripMenuItem";
+            this.raportyToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.raportyToolStripMenuItem.Text = "Raporty";
+            this.raportyToolStripMenuItem.Click += new System.EventHandler(this.raportyToolStripMenuItem_Click);
             // 
             // groupBox1
             // 
@@ -112,6 +121,70 @@
             this.groupBox1.Size = new System.Drawing.Size(476, 185);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(344, 126);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(228, 129);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "ID_Zglaszajacy";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(344, 100);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(227, 103);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(76, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "ID_Dyspozytor";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(344, 74);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(227, 77);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "ID_Karetka";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(344, 48);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(227, 51);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "ID_ZespolRatowniczy";
             // 
             // textBox5
             // 
@@ -253,70 +326,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(797, 193);
             this.dataGridView1.TabIndex = 4;
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(344, 48);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 13;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(227, 51);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "ID_ZespolRatowniczy";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(344, 74);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 15;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(227, 77);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "ID_Karetka";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(344, 100);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 17;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(227, 103);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 13);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "ID_Dyspozytor";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(344, 126);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 19;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(228, 129);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "ID_Zglaszajacy";
-            // 
             // Wypadek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,5 +379,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ToolStripMenuItem raportyToolStripMenuItem;
     }
 }

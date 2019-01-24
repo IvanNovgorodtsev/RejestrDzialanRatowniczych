@@ -11,3 +11,4 @@ A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\Rejestr
 A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.Wypadek.resources
 A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.WypadekView.resources
 A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.Login.resources
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Debug\RejestrDzialanRatowniczych.Raporty.resources

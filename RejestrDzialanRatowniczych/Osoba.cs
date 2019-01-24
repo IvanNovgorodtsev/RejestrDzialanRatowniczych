@@ -138,6 +138,14 @@ namespace RejestrDzialanRatowniczych
             wypadek.Show();
         }
 
+        private void raportyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var raporty = new Raporty();
+            raporty.Closed += (s, args) => this.Close();
+            raporty.Show();
+        }
+
         private String ExecuteQuery(TextBox textBox)
         {
             SqlCommand command = new SqlCommand("SELECT RowVersion from Osoba where ID_Osoba = @ID_Osoba", main.con);
@@ -151,6 +159,14 @@ namespace RejestrDzialanRatowniczych
                 }
             }
             return result;
+        }
+
+        private void raportyToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            var raporty = new Raporty();
+            raporty.Closed += (s, args) => this.Close();
+            raporty.Show();
         }
     }
 }

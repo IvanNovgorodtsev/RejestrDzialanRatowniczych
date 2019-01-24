@@ -115,5 +115,13 @@ namespace RejestrDzialanRatowniczych
             dataGridView1.DataSource = dt;
             main.con.Close();
         }
+
+        private void raportyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var raporty = new Raporty();
+            raporty.Closed += (s, args) => this.Close();
+            raporty.Show();
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace RejestrDzialanRatowniczych
     {
         public static bool conStatus = false;
         public static string datasource = "MSIGP70";
-        public static string initialcatalog = "werszyn0.0.1";
+        public static string initialcatalog = "baza_ze_skryptu";
         public static SqlConnection con;
 
 

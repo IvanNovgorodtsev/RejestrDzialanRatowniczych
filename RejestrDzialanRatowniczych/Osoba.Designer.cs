@@ -52,6 +52,7 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.osobaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wypadekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.raportyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -257,7 +258,8 @@
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.osobaToolStripMenuItem,
-            this.wypadekToolStripMenuItem});
+            this.wypadekToolStripMenuItem,
+            this.raportyToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(809, 24);
@@ -277,6 +279,13 @@
             this.wypadekToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.wypadekToolStripMenuItem.Text = "Wypadek";
             this.wypadekToolStripMenuItem.Click += new System.EventHandler(this.wypadekToolStripMenuItem_Click);
+            // 
+            // raportyToolStripMenuItem
+            // 
+            this.raportyToolStripMenuItem.Name = "raportyToolStripMenuItem";
+            this.raportyToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.raportyToolStripMenuItem.Text = "Raporty";
+            this.raportyToolStripMenuItem.Click += new System.EventHandler(this.raportyToolStripMenuItem_Click_1);
             // 
             // Osoba
             // 
@@ -328,6 +337,7 @@
         private System.Windows.Forms.ToolStripMenuItem wypadekToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ToolStripMenuItem raportyToolStripMenuItem;
     }
 }
 
