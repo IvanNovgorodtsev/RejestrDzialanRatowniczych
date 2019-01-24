@@ -114,9 +114,9 @@ namespace RejestrDzialanRatowniczych
 
         private void dataGridView1_CellBlick(object sender, DataGridViewCellEventArgs e)
         {
-                if (e.ColumnIndex == 6)
+                if (e.ColumnIndex == 7)
                 {
-                    var val = this.dataGridView1[e.ColumnIndex-1, e.RowIndex].Value.ToString();
+                    var val = this.dataGridView1[e.ColumnIndex-2, e.RowIndex].Value.ToString();
                     var wypadekView = new WypadekView(val);
                     wypadekView.Show();
                 }

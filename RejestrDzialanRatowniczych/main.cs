@@ -10,12 +10,14 @@ namespace RejestrDzialanRatowniczych
     static class main
     {
         public static bool conStatus = false;
-        public static string datasource;
-        public static string initialcatalog;
+        public static string datasource = "MSIGP70";
+        public static string initialcatalog = "werszyn0.0.1";
         public static SqlConnection con;
 
 
-        // (@"Data Source=MSIGP70;Initial Catalog=werszyn0.0.1;Integrated Security=True");
+        // MSIGP70
+        // werszyn0.0.1
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
