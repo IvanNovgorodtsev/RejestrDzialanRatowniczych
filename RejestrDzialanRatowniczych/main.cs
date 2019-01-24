@@ -10,8 +10,8 @@ namespace RejestrDzialanRatowniczych
     static class main
     {
         public static bool conStatus = false;
-        public static string datasource = "MSIGP70";
-        public static string initialcatalog = "baza_ze_skryptu";
+        public static string datasource;
+        public static string initialcatalog;
         public static SqlConnection con;
 
 

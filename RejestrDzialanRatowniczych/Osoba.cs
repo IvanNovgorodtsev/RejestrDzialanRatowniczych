@@ -16,8 +16,8 @@ namespace RejestrDzialanRatowniczych
         public Osoba()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
-            this.Location = new Point(50, 50);
+            this.StartPosition = FormStartPosition.CenterParent;
+            //this.Location = new Point(50, 50);
         }
         
         private void button1_Click(object sender, EventArgs e) // Procedura dodawania nowej osoby Osoba_insert
@@ -37,7 +37,7 @@ namespace RejestrDzialanRatowniczych
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.Message);
             }
             main.con.Close();
         }

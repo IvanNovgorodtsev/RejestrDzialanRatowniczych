@@ -8,3 +8,7 @@ A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\Rejes
 A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.csproj.CoreCompileInputs.cache
 A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.exe
 A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.pdb
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.csprojAssemblyReference.cache
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.Login.resources
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.Raporty.resources
+A:\IT\C#\RejestrDzialanRatowniczych\RejestrDzialanRatowniczych\obj\Release\RejestrDzialanRatowniczych.WypadekView.resources

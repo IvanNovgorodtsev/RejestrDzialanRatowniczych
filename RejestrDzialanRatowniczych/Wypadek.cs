@@ -16,8 +16,8 @@ namespace RejestrDzialanRatowniczych
         public Wypadek()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
-            this.Location = new Point(50, 50);
+            this.StartPosition = FormStartPosition.CenterParent;
+            //this.Location = new Point(50, 50);
         }
 
         private void osobaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace RejestrDzialanRatowniczych
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.Message);
             }
             main.con.Close();
         }

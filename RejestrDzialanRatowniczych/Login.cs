@@ -34,8 +34,8 @@ namespace RejestrDzialanRatowniczych
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //main.datasource = textBox1.Text;
-            //main.initialcatalog = textBox2.Text;
+            main.datasource = textBox1.Text;
+            main.initialcatalog = textBox2.Text;
             if (main.datasource.Length != 0 || main.initialcatalog.Length != 0)
             {
                 main.con = new SqlConnection(@"Data Source=" + main.datasource + ";Initial Catalog=" + main.initialcatalog + ";Integrated Security=True");
